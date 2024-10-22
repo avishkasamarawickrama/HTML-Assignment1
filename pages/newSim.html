@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get New SIM - TIGO</title>
+    <link rel="icon" href="/images/TIGO (1).png">
+    <link rel="stylesheet" href="css/newSim.css">
+    
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="/images/TIGO (1).png" alt="Tigo Logo" style="width: 100%; height: 100%;">
+    </div>
+
+    <header class="header">
+        <h1>TIGO - Order Your New SIM Online</h1>
+        <h5>Sri Lanka’s Fastest Network Service</h5>
+        <p>Get connected with Tigo's fast and reliable network. Order your new SIM card online and enjoy seamless
+            connectivity.</p>
+    </header>
+
+    <section>
+        <form action="/pages/index.html" method="post">
+            <h2>How to Order</h2>
+            <ol>
+                <li>
+                    <b>Choose your SIM type:</b>
+                    <select name="type" id="type">
+                        <option value="prepaid">Prepaid</option>
+                        <option value="postpaid">Postpaid</option>
+                    </select>
+                </li><br>
+                <li>
+                    <b>Fill in your personal details:</b>
+                    <label for="mobile-no">Mobile No:</label>
+                    <input type="number" id="mobile-no" name="mobile-no" placeholder="Enter your mobile number">
+                </li><br>
+                <li>
+                    <b>Select your preferred payment method:</b>
+                    <select name="methods" id="methods">
+                        <option value="visa">Visa</option>
+                        <option value="master">Master</option>
+                        <option value="ez-cash">Ez Cash</option>
+                    </select>
+                    <label for="account-no">Account No:</label>
+                    <input type="number" id="account-no" name="account-no" placeholder="X2084 498 30348">
+                </li><br>
+                <li>
+                    <b>Confirm your order and make the payment:</b>
+                    <label for="payment">Payment:</label>
+                    <input type="number" id="payment" name="payment" placeholder="RS:210/=">
+                    <button type="submit" onclick="alert('Payment Successfully Made!')">PAY</button>
+                </li>
+            </ol>
+        </form>
+    </section>
+
+    <section class="sim-container">
+        <div class="sim-option">
+            <h3>Prepaid SIM</h3>
+            <p>Perfect for flexible usage with no contracts.</p>
+            <button onclick="alert('Your Prepaid SIM is Ready!')">Order Now</button>
+        </div>
+        <div class="sim-option">
+            <h3>Postpaid SIM</h3>
+            <p>Ideal for consistent usage with monthly billing.</p>
+            <button onclick="alert('Your Postpaid SIM is Ready!')">Order Now</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>What Our Customers Say</h2>
+        <p>
+        <blockquote>"Ordering my new SIM online was quick and easy. The delivery was fast, and the activation process
+            was seamless!" - S. Perera</blockquote>
+        </p>
+        <p>
+        <blockquote>"Tigo's network is reliable, and the customer service is excellent. Highly recommend!" - Sithari
+            Gunawardhane</blockquote>
+        </p>
+    </section>
+
+    <footer>
+        <h2>Need Help?</h2>
+        <img src="/images/customer care.png" alt="customer care ">
+        <p>Contact our support team at <a href="tel:+1237777777595">+123777 777 759 5</a> or <a
+                href="mailto:support@tigo.com">support@tigo.com</a>.</p>
+    </footer>
+
+</body>
+
+</html>
+

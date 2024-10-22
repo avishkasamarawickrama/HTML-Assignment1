@@ -1,0 +1,199 @@
+body {
+    background-color: rgb(205, 231, 209);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #3a4b3a;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: color-change 5s ease-in-out infinite;
+}
+
+header img {
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+h1 {
+    text-align: center;
+    color: #006400;
+}
+
+h2 {
+    color: #006400;
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p,
+dt {
+    font-size: 16px;
+}
+
+a {
+    color: #261f4e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-method {
+    text-align: center;
+}
+
+.contact-method img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #3a4b3a;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    margin-top: 20px;
+}
+
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    z-index: 1000;
+}
+
+.sticky-note {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #dcf162;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-note p {
+    margin: 0;
+    font-weight: bold;
+}
+
+ @keyframes color-change {
+     from {
+         background: linear-gradient(135deg, #6aa028, #3b9e0d);
+     }
+
+     to {
+         background: linear-gradient(135deg, #597933, #1b3d0b);
+     }
+ }
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer {
+        padding: 40px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .sticky-note {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+        height: 100px;
+    }
+
+    header img {
+        height: 50px;
+        margin-right: 12px;
+        margin-top: -60px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+        
+    }
+
+    p,
+    dt {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sticky-note {
+        right: 10px;
+        bottom: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    video{
+        opacity: 0;
+    }
+}

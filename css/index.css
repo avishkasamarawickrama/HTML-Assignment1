@@ -1,0 +1,244 @@
+    body {
+        background: linear-gradient(135deg, #a8e063, #56ab2f);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
+        z-index: 1000;
+        
+    }
+    .logo img{
+        border-radius: 20px;
+        box-shadow: 0 0 10px;
+        
+    }
+
+    header {
+        text-align: center;
+        color: white;
+        padding: 20px;
+        background-color: #2d572c;
+        animation: color-change 5s ease-in-out infinite;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    header h5 {
+        margin: 5px;
+        font-size: 1.2em;
+    }
+
+    section {
+        margin: 20px auto;
+        max-width: 1200px;
+        text-align: center;
+    }
+
+    section h2 {
+        color: #fff;
+        background-color: #2d572c;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    section h4 {
+        color: #bb4262;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px 30px;
+        background-color: #04AA6D;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 30px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    nav ul li a:hover {
+        background-color: #037d50;
+        transform: scale(1.05);
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    footer a {
+        color: #04AA6D;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    @keyframes color-change {
+        from{
+            background: linear-gradient(135deg, #a8e063, #56ab2f);
+        }
+        to{
+            background: linear-gradient(135deg, #315504, #56ab2f);
+        }
+    }
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav ul li a {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav ul li a {
+        padding: 14px 25px;
+        font-size: 18px;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    nav ul li a {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav ul li a {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    header h1 {
+        font-size: 3em;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    nav ul li a {
+        padding: 20px 35px;
+        font-size: 22px;
+    }
+}

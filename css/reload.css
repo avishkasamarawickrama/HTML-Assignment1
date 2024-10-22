@@ -1,0 +1,154 @@
+   body {
+       background-color: rgb(172, 211, 178);
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       animation: color-change 5s ease-in-out infinite;
+   }
+
+   .logo {
+       position: fixed;
+       top: 10px;
+       left: 10px;
+       width: 80px;
+       height: 80px;
+       z-index: 1000;
+   }
+
+   .logo img {
+       border-radius: 20px;
+       box-shadow: 0 0 10px;
+
+   }
+
+   .header {
+       text-align: center;
+       color: rgb(13, 47, 83);
+       padding: 20px;
+   }
+
+   h1,
+   h2 {
+       color: #21332d;
+       text-align: center;
+       text-shadow: 0  2px  #073d29;
+   }
+  
+   p {
+       text-align: center;
+       font-size: 18px;
+   }
+
+   .reload-container {
+       display: flex;
+       justify-content: space-around;
+       padding: 20px;
+       gap: 20px;
+   }
+
+   .reload-option {
+       background-color: #04AA6D;
+       color: white;
+       border: 2px dotted;
+       padding: 20px;
+       border-radius: 8px;
+       text-align: center;
+       width: 30%;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      
+   }
+
+   .reload-option h3 {
+       margin-bottom: 10px;
+   }
+
+   .reload-option button {
+       background-color: white;
+       color: #04AA6D;
+       padding: 10px 20px;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+   }
+
+   .reload-option button:hover {
+       background-color: #04AA6D;
+       color: white;
+       border: 1px solid white;
+   }
+
+   footer {
+       text-align: center;
+       padding: 20px;
+   }
+
+   footer a {
+       color: #073d29;
+   }
+
+   footer a:hover {
+       text-decoration: underline;
+   }
+
+   @keyframes color-change {
+       from {
+           background: linear-gradient(135deg, rgb(172, 211, 178), #56ab2f);
+       }
+
+       to {
+           background: linear-gradient(135deg, #2b4111, #74e63f);
+       }
+   }
+
+   @media screen and (max-width: 768px) {
+       .reload-container {
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .reload-option {
+           width: 80%;
+           margin-bottom: 20px;
+       }
+
+       h1,
+       h2 {
+           font-size: 22px;
+       }
+
+       p {
+           font-size: 16px;
+       }
+
+       .logo {
+           width: 60px;
+           height: 60px;
+       }
+   }
+
+   @media screen and (max-width: 480px) {
+       .reload-option {
+           width: 90%;
+           padding: 15px;
+       }
+
+       h1,
+       h2 {
+           font-size: 20px;
+       }
+
+       p {
+           font-size: 14px;
+       }
+
+       .logo {
+           width: 50px;
+           height: 50px;
+       }
+
+       button {
+           padding: 8px 15px;
+       }
+
+       footer {
+           padding: 15px;
+       }
+   }
